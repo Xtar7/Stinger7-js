@@ -10,28 +10,16 @@
       }
     }
   
-    // 🎵 播放神秘音效
+    // 🎵 在线音效（示例：神秘短音效）
     function playMysterySound() {
-      const audio = new Audio("https://raw.githubusercontent.com/Xtar7/Stinger7-js/main/music/不是英雄不读三国.mp3");
+      const audio = new Audio("https://cdn.pixabay.com/audio/2022/03/15/audio_b34f4ef205.mp3");
       audio.play();
-    }
-  
-    // 🌈 页面配色
-    function changeColors() {
-      document.body.style.backgroundColor = "#000";
-      document.body.style.color = "#0f0";
-  
-      // 5 秒后恢复
-      setTimeout(() => {
-        document.body.style.backgroundColor = "";
-        document.body.style.color = "";
-      }, 5000);
     }
   
     // 🖼️ 中央图片/文字彩蛋
     function showMysteryImage() {
       const img = document.createElement("img");
-      img.src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/Golden_mask_of_Tutankhamun.jpg"; // 改成公开可访问的链接
+      img.src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/Golden_mask_of_Tutankhamun.jpg"; // 仍使用图坦卡蒙面具
       img.style.position = "fixed";
       img.style.top = "50%";
       img.style.left = "50%";
@@ -49,7 +37,6 @@
   
     // 🎯 彩蛋组合逻辑
     function showArchaeologyEasterEgg() {
-      changeColors();
       showConfetti();
       playMysterySound();
       showMysteryImage();
@@ -60,4 +47,5 @@
   
     // 👇 如果以后想在别处也手动调用
     window.showArchaeologyEasterEgg = showArchaeologyEasterEgg;
-  })();  
+  })();
+  
