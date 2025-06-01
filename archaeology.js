@@ -20,11 +20,10 @@
       text.style.transform = "translate(-50%, -50%)";
       text.style.fontSize = "2rem";
       text.style.color = "gold";
-      text.style.backgroundColor = "rgba(0,0,0,0.7)";
       text.style.padding = "1rem 2rem";
       text.style.border = "2px solid gold";
       text.style.borderRadius = "10px";
-      text.style.zIndex = "9999";
+      text.style.zIndex = "5";
       document.body.appendChild(text);
   
       // 自动 5 秒后移除
