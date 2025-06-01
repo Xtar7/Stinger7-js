@@ -12,7 +12,7 @@
   
     // 🎵 播放神秘音效
     function playMysterySound() {
-      const audio = new Audio("https://cdn.pixabay.com/audio/2021/11/03/audio_0e80d66d07.mp3");
+      const audio = new Audio("https://github.com/Xtar7/Stinger7-js/blob/main/music/%E4%B8%8D%E6%98%AF%E8%8B%B1%E9%9B%84%E4%B8%8D%E8%AF%BB%E4%B8%89%E5%9B%BD.mp3");
       audio.play();
     }
   
@@ -25,7 +25,7 @@
     // 🖼️ 中央图片/文字彩蛋
     function showMysteryImage() {
       const img = document.createElement("img");
-      img.src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/Golden_mask_of_Tutankhamun.jpg";
+      img.src = "https://cdn.nlark.com/yuque/0/2025/jpeg/42910607/1748764379370-cfab7034-06dd-474c-97f3-75afa4fae6b9.jpeg?x-oss-process=image%2Fformat%2Cwebp";
       img.style.position = "fixed";
       img.style.top = "50%";
       img.style.left = "50%";
