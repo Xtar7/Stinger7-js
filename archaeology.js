@@ -12,7 +12,7 @@
   
     // 🎵 播放神秘音效
     function playMysterySound() {
-      const audio = new Audio("https://github.com/Xtar7/Stinger7-js/blob/main/music/%E4%B8%8D%E6%98%AF%E8%8B%B1%E9%9B%84%E4%B8%8D%E8%AF%BB%E4%B8%89%E5%9B%BD.mp3");
+      const audio = new Audio("https://raw.githubusercontent.com/Xtar7/Stinger7-js/main/music/不是英雄不读三国.mp3");
       audio.play();
     }
   
@@ -20,12 +20,18 @@
     function changeColors() {
       document.body.style.backgroundColor = "#000";
       document.body.style.color = "#0f0";
+  
+      // 5 秒后恢复
+      setTimeout(() => {
+        document.body.style.backgroundColor = "";
+        document.body.style.color = "";
+      }, 5000);
     }
   
     // 🖼️ 中央图片/文字彩蛋
     function showMysteryImage() {
       const img = document.createElement("img");
-      img.src = "https://cdn.nlark.com/yuque/0/2025/jpeg/42910607/1748764379370-cfab7034-06dd-474c-97f3-75afa4fae6b9.jpeg?x-oss-process=image%2Fformat%2Cwebp";
+      img.src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/Golden_mask_of_Tutankhamun.jpg"; // 改成公开可访问的链接
       img.style.position = "fixed";
       img.style.top = "50%";
       img.style.left = "50%";
@@ -54,5 +60,4 @@
   
     // 👇 如果以后想在别处也手动调用
     window.showArchaeologyEasterEgg = showArchaeologyEasterEgg;
-  })();
-  
+  })();  
