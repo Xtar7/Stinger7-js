@@ -1,5 +1,5 @@
 (function () {
-    // 🎉 彩带效果：使用 canvas-confetti 库
+    // 🎉 彩带效果
     function showConfetti() {
       if (typeof confetti === "function") {
         confetti({
@@ -20,27 +20,24 @@
       text.style.transform = "translate(-50%, -50%)";
       text.style.fontSize = "2rem";
       text.style.color = "gold";
+      text.style.backgroundColor = "rgba(0, 0, 0, 0.7)"; // 背景遮罩可选
       text.style.padding = "1rem 2rem";
       text.style.border = "2px solid gold";
       text.style.borderRadius = "10px";
-      text.style.zIndex = "5";
+      text.style.zIndex = "9999"; // 确保在最上层
       document.body.appendChild(text);
   
-      // 自动 5 秒后移除
       setTimeout(() => {
         text.remove();
       }, 5000);
     }
   
-    // 🎯 彩蛋组合逻辑
+    // 组合
     function showArchaeologyEasterEgg() {
       showConfetti();
       showMysteryText();
     }
   
-    // 自动绑定 Konami 触发器
     new Konami(showArchaeologyEasterEgg);
-  
-    // 以后想在别处也手动调用
     window.showArchaeologyEasterEgg = showArchaeologyEasterEgg;
   })();  
